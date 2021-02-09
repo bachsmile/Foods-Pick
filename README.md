@@ -12,7 +12,6 @@ a.	Tiêu đề trang:
 -	Tên trang: Food Pick
 b.	Nội dung:
 -	Trang web bán thức ăn văn phòng và tại quán tự động
-
 2.	Thành phần:
 Số trang: 9 trang
 -	Home
@@ -45,5 +44,9 @@ i.	Show qr thanh toán
 h.	Login –register
 i.	Recomment – ai – pick món
 
+//first commit:
+run backend: 
+cd backend
+npm start
 
 
