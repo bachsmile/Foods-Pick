@@ -46,7 +46,10 @@ i.	Recomment – ai – pick món
 
 //first commit:
 run backend: 
-cd backend
-npm start
+- cd backend
+- npm i
+- npm start
+- vào backend/src/resource/views/home.hbs để code giao diện trang home
+- vào backend/src/resource/views/patials/header.hbs để code giao diện header
 
 
