@@ -1,0 +1,107 @@
+$currentColor: white;
+.header{
+    width: 100%;
+    height: auto;
+    display: block;
+    background-image: url(https://parkofideas.com/foodz/demo/wp-content/uploads-new/2019/04/demo3-2535265688.jpg);
+    &__contact{
+        width: 100%;
+        height: 50px;
+        background-color: #1a212e;
+    }
+    &__inner{
+        width: 80%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        &__containerLogo{
+            padding: 30px 10px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                color: white;
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                img{
+                    height: 90px;
+                }
+            }
+            &__logo{
+                // width: 33.3333%;
+                cursor: pointer;
+            }
+            &__contactLeft{
+                width: 33.3333%;
+                color: white;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    height: 100%;
+                    li{
+                        align-self: center;
+                        padding: 0 20px;
+                        font-size: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            &__contactRight{
+                width: 33.3333%;
+                color: white;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    height: 100%;
+                    float: right;
+                    li{
+                        align-self: center;
+                        padding: 0 20px;
+                        font-size: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        &__navBar{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            li{
+                height: 100%;
+                display: table;
+                float: left;
+                padding: 0 20px;
+                a{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &__containerIcon{
+        width: 100%;
+        // text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 35px 10px;
+        &__img{
+            width: 100%;
+            padding: 30px 10px;
+            .fas{
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        &__title{
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    }
+}
