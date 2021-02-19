@@ -5,9 +5,20 @@ class HeaderHomeFood extends Component{
         return(
             <div className="header">
                 <div className= "header__contact">
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
+                    <div className="header__contact__linkPage">
+                        <div className="header__contact__item">Pages</div>
+                        <div className="header__contact__item">Products</div>
+                        <div className="header__contact__item">Blogs</div>
+                    </div>
+                    <div className="header__contact__call">
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <span> <span><img className='iconFlag' src="./assets/img/co.png" alt=""/></span>VN </span>
+                        <span>(+84) 777 444 933</span>
+                    </div>
+                    <div className="header__contact__linkPage">
+                        <div className="header__contact__item"><span><i class="fas fa-users-cog"></i></span>Admin</div>
+                        <div className="header__contact__item"><span><i class="fas fa-user"></i></span>   Login</div>
+                    </div>
                 </div>
                 <div className="header__inner">
                     <div className="header__inner__containerLogo">

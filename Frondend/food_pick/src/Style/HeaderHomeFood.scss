@@ -8,6 +8,26 @@ $currentColor: white;
         width: 100%;
         height: 50px;
         background-color: #1a212e;
+        display: flex;
+        color: white;
+        font-weight: 500;
+        padding: 10px 120px;
+        align-items: center;
+        justify-content: space-between;
+        &__item{
+            padding: 0px 20px;
+            span{
+                padding: 0 10px;
+            }
+        }
+        &__linkPage{
+            display: flex;
+        }
+        &__call{
+            span{
+                padding: 0 5px;
+            }
+        }
     }
     &__inner{
         width: 80%;
@@ -104,4 +124,8 @@ $currentColor: white;
         }
 
     }
+}
+.iconFlag{
+    width: 15px;
+    height: 15px;
 }
