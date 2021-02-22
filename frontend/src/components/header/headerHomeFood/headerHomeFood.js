@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import './../../components/header/headerHomeFood.scss'
+import {Link} from 'react-router-dom';
+import './headerHomeFood.scss';
 class HeaderHomeFood extends Component{
     render(){
         return(
@@ -11,32 +12,32 @@ class HeaderHomeFood extends Component{
                         <div className="header__contact__item">Blogs</div>
                     </div>
                     <div className="header__contact__call">
-                        <span><i class="fas fa-phone-volume"></i></span>
+                        <span><i className="fas fa-phone-volume"></i></span>
                         <span> <span><img className='iconFlag' src="./assets/img/co.png" alt=""/></span>VN </span>
                         <span>(+84) 777 444 933</span>
                     </div>
                     <div className="header__contact__linkPage">
-                        <div className="header__contact__item"><span><i class="fas fa-users-cog"></i></span>Admin</div>
-                        <div className="header__contact__item"><span><i class="fas fa-user"></i></span>   Login</div>
+                        <div className="header__contact__item"><span><i className="fas fa-users-cog"></i></span>Admin</div>
+                        <div className="header__contact__item"><span><i className="fas fa-user"></i></span>   Login</div>
                     </div>
                 </div>
                 <div className="header__inner">
                     <div className="header__inner__containerLogo">
                         <div className="header__inner__containerLogo__contactLeft">
                             <ul>
-                                <li><i class="fab fa-facebook-f"></i></li>
-                                <li><i class="fab fa-instagram"></i></li>
-                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i className="fab fa-facebook-f"></i></li>
+                                <li><i className="fab fa-instagram"></i></li>
+                                <li><i className="fab fa-twitter"></i></li>
                             </ul>
                         </div>
-                        <span className="header__inner__containerLogo__logo">
+                        <Link to="/homeFood" className="header__inner__containerLogo__logo">
                             <img src="https://parkofideas.com/foodz/demo/wp-content/uploads-new/2019/04/demo3-2428546643.svg" alt=""/>
-                        </span>
+                        </Link>
                         <div className="header__inner__containerLogo__contactRight">
                             <ul>
-                                <li><i class="fas fa-search"></i></li>
-                                <li><i class="fas fa-heart"></i></li>
-                                <li><i class="fas fa-shopping-bag"></i></li>
+                                <li><i className="fas fa-search"></i></li>
+                                <li><i className="fas fa-heart"></i></li>
+                                <li><i className="fas fa-shopping-bag"></i></li>
                             </ul>
                         </div>
                     </div>
@@ -45,7 +46,7 @@ class HeaderHomeFood extends Component{
                             <a>
                                 <span className= "header__containerIcon">
                                     <span className="header__containerIcon__img">
-                                        <i class="fas fa-pizza-slice"></i>
+                                        <i className="fas fa-pizza-slice"></i>
                                     </span>
                                     <span className="header__containerIcon__title">Pizza</span>
                                 </span>
@@ -55,7 +56,7 @@ class HeaderHomeFood extends Component{
                             <a>
                                 <span className= "header__containerIcon">
                                     <span className="header__containerIcon__img">
-                                         <i class="fas fa-hamburger"></i>
+                                         <i className="fas fa-hamburger"></i>
                                     </span>
                                     <span className="header__containerIcon__title">Burger</span>
                                 </span>
@@ -65,7 +66,7 @@ class HeaderHomeFood extends Component{
                             <a>
                                 <span className= "header__containerIcon">
                                     <span className="header__containerIcon__img">
-                                        <i class="fas fa-pizza-slice"></i>
+                                        <i className="fas fa-pizza-slice"></i>
                                     </span>
                                     <span className="header__containerIcon__title">Pizza</span>
                                 </span>
@@ -75,7 +76,7 @@ class HeaderHomeFood extends Component{
                             <a>
                                 <span className= "header__containerIcon">
                                     <span className="header__containerIcon__img">
-                                        <i class="fas fa-pizza-slice"></i>
+                                        <i className="fas fa-pizza-slice"></i>
                                     </span>
                                     <span className="header__containerIcon__title">Pizza</span>
                                 </span>
@@ -85,7 +86,7 @@ class HeaderHomeFood extends Component{
                             <a>
                                 <span className= "header__containerIcon">
                                     <span className="header__containerIcon__img">
-                                        <i class="fas fa-pizza-slice"></i>
+                                        <i className="fas fa-pizza-slice"></i>
                                     </span>
                                     <span className="header__containerIcon__title">Pizza</span>
                                 </span>

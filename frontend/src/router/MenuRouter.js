@@ -1,14 +1,20 @@
 import React, {Component} from 'react'
-import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import {  Route,Switch, Redirect } from "react-router-dom";
 import ErrorPage from '../page/errorPage/error';
 import HomeIntroduction from '../page/homePage/home_intro/homeIntroduction';
+import ImgApi from '../container/imgApi/imgApi';
+import HomeFood from '../page/homePage/home_food/homeFood';
+import ShopFood from '../page/shopFood/shopFood';
 class MenuRouters extends Component {
     render(){
         return (
             <div>
                 <Switch>
-                    <Route path="/"  component={HomeIntroduction} exact/>
-                    {/* <Route path="/home"  component={HomePage}/> */}
+                    <Redirect exact from="/" to="/Home" />
+                    <Route path="/Home"  component={HomeIntroduction}/>
+                    <Route path="/HomeFood"  component={HomeFood}/>
+                    <Route path="/ShopFood"  component={ShopFood}/>
+                    <Route path="/imgApi"  component={ImgApi}/>
                     <Route component={ErrorPage} />
                 </Switch>
             </div>
