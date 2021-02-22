@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import HeaderHomeFood from '../../components/Header/headerHomeFood';
-import './../../Style/HomeIntroduction.scss';
+import HeaderHomeFood from '../../../components/header/headerHomeFood';
+import '../../../page/homePage/home_intro/homeIntroduction.scss';
 class HomeIntroduction extends Component {
     constructor(props) {
         super(props);

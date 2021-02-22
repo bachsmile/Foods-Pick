@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
-import ErrorPage from '../page/Error';
-import HomeIntroduction from '../page/Home/HomeIntroduction';
+import ErrorPage from '../page/errorPage/error';
+import HomeIntroduction from '../page/homePage/home_intro/homeIntroduction';
 class MenuRouters extends Component {
     render(){
         return (

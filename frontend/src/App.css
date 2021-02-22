@@ -3,7 +3,11 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    background-image: url(./assert/img/bg.jpg);
 }
 ul{
     margin-bottom: 0;
+}
+.darkMode{
+    background-image: url(./assert/img/bg.jpg);
 }

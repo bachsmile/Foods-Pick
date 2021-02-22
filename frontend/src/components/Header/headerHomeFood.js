@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './../../Style/HeaderHomeFood.scss'
+import './../../components/header/headerHomeFood.scss'
 class HeaderHomeFood extends Component{
     render(){
         return(

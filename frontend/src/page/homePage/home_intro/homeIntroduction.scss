@@ -14,7 +14,7 @@
         opacity: 0;
         transition: opacity 2s;
         img{
-            height: 100%;
+            object-fit: cover;
         }
     }
     .active{
@@ -45,12 +45,6 @@
     0%{
         opacity: 0;
     }
-    // 33%{
-    //     opacity: 0.25;
-    // }
-    // 67%{
-    //     opacity: 0.85;
-    // }
     100%{
         opacity: 1;
     }
@@ -59,12 +53,6 @@
     0%{
         opacity: 1;
     }
-    // 33%{
-    //     opacity: 0.75;
-    // }
-    // 67%{
-    //     opacity: 0.25;
-    // }
     100%{
         opacity: 0;
     }
