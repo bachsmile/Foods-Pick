@@ -92,7 +92,7 @@ class LoginPage extends Component {
                     <div className="panels__panel panels__left">
                         <div className="content">
                             <h3>New here</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, necessitatibus. Voluptatem quisquam eos dolorem illo, ratione inventore iure rerum!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, necessitatibusss. Voluptatem quisquam eos dolorem illo, ratione inventore iure rerum!</p>
                             <button className="btnlg transparent" id="sign-up-btn" onClick={this.signUp}>Sign up</button>
                         </div>
                         <img src={imgApis.img9} className='imagelg' alt=""/>
