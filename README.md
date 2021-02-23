@@ -1,3 +1,13 @@
+Project web food automation
+
+CODE CONVENTION
+
+Thư mục k được viết hoa, space, kí tự đặc biệt.
+Tên file, tên biến tuân theo camelCase
+Tên class (conponent) tuân theo PascalCase
+Tên Constant (hằng số) tuân theo UPPERCASE
+TECHNICAL Fontend : react.js Backend: Node.js DB: MongoDB Phone: react native 
+I. GIỚI THIỆU TRANG WEB
 # Foods-Pick
 Project web food automation
 
