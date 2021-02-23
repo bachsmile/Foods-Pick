@@ -18,7 +18,7 @@ class HeaderHomeFood extends Component{
                     </div>
                     <div className="header__contact__linkPage">
                         <div className="header__contact__item"><span><i className="fas fa-users-cog"></i></span>Admin</div>
-                        <div className="header__contact__item"><span><i className="fas fa-user"></i></span>   Login</div>
+                        <Link to='/login' className="header__contact__item"><span><i className="fas fa-user"></i></span>   Login</Link>
                     </div>
                 </div>
                 <div className="header__inner">
@@ -43,7 +43,7 @@ class HeaderHomeFood extends Component{
                     </div>
                     <ul className="header__inner__navBar">
                          <li>
-                            <a>
+                            <a href='/'>
                                 <span className= "header__containerIcon">
                                     <span className="header__containerIcon__img">
                                         <i className="fas fa-pizza-slice"></i>
