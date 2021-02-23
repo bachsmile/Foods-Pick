@@ -38,8 +38,26 @@
     font-weight: 900;
     letter-spacing: .5rem;
     margin-right: -.5rem;
-    animation: scale .5s forwards;
-  
+    // animation: scale .5s forwards;
+
+
+    //animation
+    overflow: hidden;
+	background: linear-gradient(90deg, #0a1420, #fff,#0a1420);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent ;
+	/*-webkit-text-fill-color: rgba(.....) ;*/
+	animation: shining 1.8s linear infinite;
+}
+@keyframes shining {
+	0% {
+		background-position: -300%;
+	}
+	100% {
+		background-position: 300%;
+	}
 }
 .separator{
     display: flex;
