@@ -9,12 +9,9 @@ class HomeIntroduction extends Component {
         }
     }
     componentDidMount(){
-     
+        
     }
     componentDidUpdate() { 
-    }
-    clickPrev=()=>{
-        alert('ok')
     }
     clickNext=()=>{
         let actives= this.state.active
