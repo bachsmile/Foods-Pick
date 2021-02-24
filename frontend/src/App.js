@@ -3,7 +3,7 @@ import MenuRouters from './router/MenuRouter';
 function App() {
     return (
         <div className="App">
-            <MenuRouters/>
+            <MenuRouters />
         </div>
     );
 }

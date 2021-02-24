@@ -1,28 +1,28 @@
-import React , {Component} from 'react';
-import {Link} from "react-router-dom";
-import './homeFood.scss';
-import imgApis from './../../../container/imgApi/imgApi';
-import Footer from '../../../components/footer/footer';
-import HeaderMin from '../../../components/header/header_min/headerMin';
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import './style.scss';
+import imgApis from '../../../container/imgApi/imgApi';
+import Footer from '../../../components/footer';
+import HeaderMin from '../../../components/header/header_min';
 class HomeFood extends Component {
-    menuTogger;body;sr;
-    constructor(props){
+    menuTogger; body; sr;
+    constructor(props) {
         super(props);
-        
+
     }
-    componentDidMount= ()=> {
+    componentDidMount = () => {
         window.addEventListener('scroll', this.handleScroll);
         this.menuTogger = document.getElementsByClassName('menu-toggle')[0];
-        this.body= document.getElementsByClassName('body')[0];
+        this.body = document.getElementsByClassName('body')[0];
         document.documentElement.scrollTop = 0;
     }
-    
-    componentWillUnmount =()=> {
+
+    componentWillUnmount = () => {
         window.removeEventListener('scroll', this.handleScroll);
     }
-    
-    handleScroll=(event)=> {
-        
+
+    handleScroll = (event) => {
+
         // if(window.scrollY==0){
         //     // console.log("top");
         //     document.getElementsByClassName("home__header")[0].setAttribute("class","home__header home__block");
@@ -32,18 +32,18 @@ class HomeFood extends Component {
         //     document.getElementsByClassName("home__header")[0].setAttribute("class","home__header home__fixed");
         // }
     }
-    selectElement=(element)=>{
+    selectElement = (element) => {
         return document.querySelector(element);
     }
-   
-    clickToggle=()=>{
+
+    clickToggle = () => {
         this.body.classList.toggle('open');
         console.log(this.body)
     }
-    render(){
-        return(
+    render() {
+        return (
             <div className="body">
-                <HeaderMin/>
+                <HeaderMin />
                 <section className="hero" id="hero">
                     <div className="containerS">
                         <h2 className="sub-headline">
@@ -58,7 +58,7 @@ class HomeFood extends Component {
                             </div>
                             <div className="single-animation">
                                 <h5>Ready to be opended</h5>
-                                <Link to='/ShopFood'  className="btn cta-btn">Explore</Link>
+                                <Link to='/ShopFood' className="btn cta-btn">Explore</Link>
                             </div>
                         </div>
                     </div>
@@ -79,11 +79,11 @@ class HomeFood extends Component {
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime aliquam aut optio tempora cupiditate laboriosam, sit debitis iusto eaque error dolorum magnam earum quam necessitatibus! Quo vel quis libero?
                                 </p>
-                                <a  className="btn body-btn">About us</a>
-                            </div>                                                 
+                                <a className="btn body-btn">About us</a>
+                            </div>
                         </div>
                         <div className="restaurant-info-img animate-right">
-                            <img className='ImgBgHome' src={imgApis.img6} alt=""/>
+                            <img className='ImgBgHome' src={imgApis.img6} alt="" />
                         </div>
                     </div>
                 </section>
@@ -108,10 +108,10 @@ class HomeFood extends Component {
                     <div className="container">
                         <div className="restaurant-info">
                             <div className="image-group padding-right animate-left">
-                                <img className='ImgBgHome' src={imgApis.img1} alt=""/>
-                                <img className='ImgBgHome' src={imgApis.img2} alt=""/>
-                                <img className='ImgBgHome' src={imgApis.img3} alt=""/>
-                                <img className='ImgBgHome' src={imgApis.img4} alt=""/>
+                                <img className='ImgBgHome' src={imgApis.img1} alt="" />
+                                <img className='ImgBgHome' src={imgApis.img2} alt="" />
+                                <img className='ImgBgHome' src={imgApis.img3} alt="" />
+                                <img className='ImgBgHome' src={imgApis.img4} alt="" />
                             </div>
                             <div className="restaurant-description animate-right">
                                 <div className="global-headline">
@@ -121,7 +121,7 @@ class HomeFood extends Component {
                                     <h1 className="headline headline-dark">Menu</h1>
                                     <div className="asterisk"><i className="fas fa-asterisk"></i> </div>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam vel at libero, omnis sed veritatis ex obcaecati officia ipsum nostrum rem id. Ab nostrum ad fugit, eos recusandae quibusdam?</p>
-                                    <a  className="btn body-btn">View the full menu</a>
+                                    <a className="btn body-btn">View the full menu</a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ class HomeFood extends Component {
                 {/* perfect blend end */}
 
                 <section className="culinary-delight">
-                <div className="container">
+                    <div className="container">
                         <div className="restaurant-info">
                             <div className="restaurant-description padding-right animate-left">
                                 <div className="global-headline">
@@ -158,19 +158,19 @@ class HomeFood extends Component {
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime aliquam aut optio tempora cupiditate laboriosam, sit debitis iusto eaque error dolorum magnam earum quam necessitatibus! Quo vel quis libero?
                                 </p>
-                                <a  className="btn body-btn">Make reservation</a>
-                            </div>                                                 
+                                <a className="btn body-btn">Make reservation</a>
+                            </div>
                         </div>
                         <div className="image-group">
-                            <img className="animate-top ImgBgHome" src={imgApis.img7} alt=""/>
-                            <img className="animate-bottom ImgBgHome" src={imgApis.img8} alt=""/>
+                            <img className="animate-top ImgBgHome" src={imgApis.img7} alt="" />
+                            <img className="animate-bottom ImgBgHome" src={imgApis.img8} alt="" />
                         </div>
                     </div>
                 </section>
                 {/* culinary end  */}
-                <Footer/>
+                <Footer />
             </div>
-        
+
         )
     }
 
