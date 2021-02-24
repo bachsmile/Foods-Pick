@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import './headerHomeFood.scss';
-class HeaderHomeFood extends Component{
-    render(){
-        return(
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './style.scss';
+class HeaderHomeFood extends Component {
+    render() {
+        return (
             <div className="header">
-                <div className= "header__contact">
+                <div className="header__contact">
                     <div className="header__contact__linkPage">
                         <div className="header__contact__item">Pages</div>
                         <div className="header__contact__item">Products</div>
@@ -13,12 +13,12 @@ class HeaderHomeFood extends Component{
                     </div>
                     <div className="header__contact__call">
                         <span><i className="fas fa-phone-volume"></i></span>
-                        <span> <span><img className='iconFlag' src="./assets/img/co.png" alt=""/></span>VN </span>
+                        <span> <span><img className='iconFlag' src="./assets/img/co.png" alt="" /></span>VN </span>
                         <span>(+84) 777 444 933</span>
                     </div>
                     <div className="header__contact__linkPage">
                         <div className="header__contact__item"><span><i className="fas fa-users-cog"></i></span>Admin</div>
-                        <div className="header__contact__item"><span><i className="fas fa-user"></i></span>   Login</div>
+                        <Link to='/login' className="header__contact__item"><span><i className="fas fa-user"></i></span>   Login</Link>
                     </div>
                 </div>
                 <div className="header__inner">
@@ -31,7 +31,7 @@ class HeaderHomeFood extends Component{
                             </ul>
                         </div>
                         <Link to="/homeFood" className="header__inner__containerLogo__logo">
-                            <img src="https://parkofideas.com/foodz/demo/wp-content/uploads-new/2019/04/demo3-2428546643.svg" alt=""/>
+                            <img src="https://parkofideas.com/foodz/demo/wp-content/uploads-new/2019/04/demo3-2428546643.svg" alt="" />
                         </Link>
                         <div className="header__inner__containerLogo__contactRight">
                             <ul>
@@ -42,9 +42,9 @@ class HeaderHomeFood extends Component{
                         </div>
                     </div>
                     <ul className="header__inner__navBar">
-                         <li>
-                            <a>
-                                <span className= "header__containerIcon">
+                        <li>
+                            <a href='/'>
+                                <span className="header__containerIcon">
                                     <span className="header__containerIcon__img">
                                         <i className="fas fa-pizza-slice"></i>
                                     </span>
@@ -54,9 +54,9 @@ class HeaderHomeFood extends Component{
                         </li>
                         <li>
                             <a>
-                                <span className= "header__containerIcon">
+                                <span className="header__containerIcon">
                                     <span className="header__containerIcon__img">
-                                         <i className="fas fa-hamburger"></i>
+                                        <i className="fas fa-hamburger"></i>
                                     </span>
                                     <span className="header__containerIcon__title">Burger</span>
                                 </span>
@@ -64,7 +64,7 @@ class HeaderHomeFood extends Component{
                         </li>
                         <li>
                             <a>
-                                <span className= "header__containerIcon">
+                                <span className="header__containerIcon">
                                     <span className="header__containerIcon__img">
                                         <i className="fas fa-pizza-slice"></i>
                                     </span>
@@ -74,7 +74,7 @@ class HeaderHomeFood extends Component{
                         </li>
                         <li>
                             <a>
-                                <span className= "header__containerIcon">
+                                <span className="header__containerIcon">
                                     <span className="header__containerIcon__img">
                                         <i className="fas fa-pizza-slice"></i>
                                     </span>
@@ -84,7 +84,7 @@ class HeaderHomeFood extends Component{
                         </li>
                         <li>
                             <a>
-                                <span className= "header__containerIcon">
+                                <span className="header__containerIcon">
                                     <span className="header__containerIcon__img">
                                         <i className="fas fa-pizza-slice"></i>
                                     </span>

@@ -1,8 +1,8 @@
-import React,{Component} from 'react';
-import './footer.scss'
-class Footer extends Component{
-    render(){
-        return(
+import React, { Component } from 'react';
+import './style.scss'
+class Footer extends Component {
+    render() {
+        return (
             <div className="footer">
                 <div className="container">
                     <div className="back-to-top">
@@ -38,7 +38,7 @@ class Footer extends Component{
                             <div className="newsletter-container">
                                 <h4>Newsletter</h4>
                                 <form action="" className="newsletter-form">
-                                    <input type="text" className="newsletter-input" placeholder='Your email address...'/>
+                                    <input type="text" className="newsletter-input" placeholder='Your email address...' />
                                     <button className="newsletter-btn" type="submit">
                                         <i className="fas fa-envelope"></i>
                                     </button>

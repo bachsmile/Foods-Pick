@@ -1,48 +1,45 @@
-import React, {Component} from 'react';
-import HeaderHomeFood from '../../../components/header/headerHomeFood/headerHomeFood';
-import './homeIntroduction.scss';
+import React, { Component } from 'react';
+import HeaderHomeFood from '../../../components/header/headerHomeFood';
+import './style.scss';
 class HomeIntroduction extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            active : 0
+            active: 0
         }
     }
-    componentDidMount(){
-     
+    componentDidMount() {
+
     }
-    componentDidUpdate() { 
+    componentDidUpdate() {
     }
-    clickPrev=()=>{
-        alert('ok')
-    }
-    clickNext=()=>{
-        let actives= this.state.active
+    clickNext = () => {
+        let actives = this.state.active
         var slides = document.getElementsByClassName("item");
-        slides[actives%slides.length].classList.toggle("active");
+        slides[actives % slides.length].classList.toggle("active");
         actives++;
         this.setState({
-            active:actives
+            active: actives
         })
-        var stt = actives%slides.length;
-        slides[stt].classList.toggle("active");      
+        var stt = actives % slides.length;
+        slides[stt].classList.toggle("active");
     }
-    clickPrev=()=>{
-        let actives= this.state.active +2
+    clickPrev = () => {
+        let actives = this.state.active + 2
         var slides = document.getElementsByClassName("item");
-        slides[actives%slides.length].classList.toggle("active");
+        slides[actives % slides.length].classList.toggle("active");
         actives++;
         this.setState({
-            active:actives+2
+            active: actives + 2
         })
-        var stt = actives%slides.length;
-        slides[stt].classList.toggle("active");      
+        var stt = actives % slides.length;
+        slides[stt].classList.toggle("active");
     }
-    render(){
-        let imgBG=["./assets/img/bg1.jpg","./assets/img/bg2.jpg","./assets/img/bg3.jpg"]
-        return(
+    render() {
+        let imgBG = ["./assets/img/bg1.jpg", "./assets/img/bg2.jpg", "./assets/img/bg3.jpg"]
+        return (
             <div className="page">
-                <HeaderHomeFood/>
+                <HeaderHomeFood />
                 <div id="slider">
                     <div className="item active">
                         <img src={imgBG[0]} />
@@ -56,7 +53,7 @@ class HomeIntroduction extends Component {
                     <div>
                         <a type='button' onClick={this.clickPrev} ><i className="btnPrev fas fa-angle-left "></i></a>
                         <a type='button' onClick={this.clickNext}><i className="btnNext fas fa-angle-right"></i></a>
-                     </div>
+                    </div>
                 </div>
             </div>
         )
