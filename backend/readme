@@ -51,3 +51,18 @@
         => app.use(cookieParser('klaiwipoqjnco29dhnn'));
         => res.cookie(key,value,{ signed:true })
 /*end epress tool*/
+
+/* install project*/
+    1. npm i
+    2. create file '.env'
+    3. copy data drop .env  
+        data=>
+                SECSION_SECRET=dadada564564wegqweq6
+                MONGODB_URL=mongodb://localhost:27017/foodz  
+    4. seting mongodb => create database foodz
+    5. create file '.gitignore'
+    6. drop data to .gitignore
+        data=>
+            node_modules
+            .env
+/*end */
