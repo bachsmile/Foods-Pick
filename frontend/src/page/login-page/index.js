@@ -26,8 +26,6 @@ class LoginPage extends Component {
         var value = target.value;
         this.user[name] = value;
         console.log(this.user);
-        axio
-
 
     }
     login = (event) => {
@@ -41,8 +39,6 @@ class LoginPage extends Component {
     register=(event)=>{
         event.preventDefault();
         console.log(this.user);
-        axios.
-
     }
     render() {
         return (
