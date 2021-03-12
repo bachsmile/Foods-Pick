@@ -4,7 +4,7 @@ import img2 from './../../assert/img/menu-group-2.jpg';
 import img3 from './../../assert/img/menu-group-3.jpg';
 import img4 from './../../assert/img/menu-group-4.jpg';
 import img5 from './../../assert/img/icon.png';
-import img6 from './../../assert/img/our-story-1.jpg';
+import img6 from './../../assert/img/cach-lam-banh-mi-pate.jpg';
 import img7 from './../../assert/img/delight-group-1.jpg';
 import img8 from './../../assert/img/delight-group-2.jpg';
 import img9 from './../../assert/img/food.svg';

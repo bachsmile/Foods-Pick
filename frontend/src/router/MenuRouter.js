@@ -5,6 +5,7 @@ import HomeIntroduction from '../page/homePage/home_intro';
 import HomeFood from '../page/homePage/home_food/index';
 import ShopFood from '../page/shopFood';
 import LoginPage from '../page/login-page';
+import ShowSection from '../components/animation/showSection';
 class MenuRouters extends Component {
     render() {
         return (
@@ -15,6 +16,7 @@ class MenuRouters extends Component {
                     <Route path="/HomeFood" component={HomeFood} />
                     <Route path="/ShopFood" component={ShopFood} />
                     <Route path="/login" component={LoginPage} />
+                    <Route path="/show" component={ShowSection} />
                     <Route component={ErrorPage} />
                 </Switch>
             </div>

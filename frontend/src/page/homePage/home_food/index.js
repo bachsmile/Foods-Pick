@@ -10,7 +10,7 @@ class HomeFood extends Component {
         super(props);
 
     }
-    componentDidMount = () => {
+    componentDidMount = () => { 
         window.addEventListener('scroll', this.handleScroll);
         this.menuTogger = document.getElementsByClassName('menu-toggle')[0];
         this.body = document.getElementsByClassName('body')[0];
@@ -66,7 +66,7 @@ class HomeFood extends Component {
                 {/* end-hero */}
 
                 <section className="discover-our-story">
-                    <div className="container">
+                    <div className="containerS">
                         <div className="restaurant-info">
                             <div className="restaurant-description padding-right animate-left">
                                 <div className="global-headline">
@@ -87,10 +87,33 @@ class HomeFood extends Component {
                         </div>
                     </div>
                 </section>
-
+                <section className="discover-our-menu">
+                    <div className="containerS">
+                        <div className="restaurant-info">
+                            <div className="restaurant-description animate-right">
+                                <div className="global-headline">
+                                    <h2 className="sub-headline">
+                                        <span className="first-letter">D</span>iscover
+                                    </h2>
+                                    <h1 className="headline headline-dark">Our Story</h1>
+                                    <div className="asterisk"><i className="fas fa-asterisk"></i> </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam vel at libero, omnis sed veritatis ex obcaecati officia ipsum nostrum rem id. Ab nostrum ad fugit, eos recusandae quibusdam?</p>
+                                    <a className="btn body-btn">About us</a>
+                                </div>
+                            </div>
+                            <div className="image-group padding-left animate-left">
+                                <img className='ImgBgHome' src={imgApis.img1} alt="" />
+                                <img className='ImgBgHome' src={imgApis.img2} alt="" />
+                                <img className='ImgBgHome' src={imgApis.img3} alt="" />
+                                <img className='ImgBgHome' src={imgApis.img4} alt="" />
+                            </div>
+                          
+                        </div>
+                    </div>
+                </section>
                 {/* end discover */}
                 <section className="tasteful-recipes between">
-                    <div className="container">
+                    <div className="containerS">
                         <div className="global-headline">
                             <div className="animate-top">
                                 <h2 className="sub-headline">
@@ -105,7 +128,7 @@ class HomeFood extends Component {
                 </section>
                 {/* end tastefull */}
                 <section className="discover-our-menu">
-                    <div className="container">
+                    <div className="containerS">
                         <div className="restaurant-info">
                             <div className="image-group padding-right animate-left">
                                 <img className='ImgBgHome' src={imgApis.img1} alt="" />
@@ -129,7 +152,7 @@ class HomeFood extends Component {
                 </section>
                 {/* discover-our meunu end */}
                 <section className="perfect-blend between">
-                    <div className="container">
+                    <div className="containerS">
                         <div className="global-headline">
                             <div className="animate-top">
                                 <h2 className="sub-headline">
@@ -145,7 +168,7 @@ class HomeFood extends Component {
                 {/* perfect blend end */}
 
                 <section className="culinary-delight">
-                    <div className="container">
+                    <div className="containerS">
                         <div className="restaurant-info">
                             <div className="restaurant-description padding-right animate-left">
                                 <div className="global-headline">

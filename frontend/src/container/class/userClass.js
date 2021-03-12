@@ -1,5 +1,6 @@
 class User{
-    username;
-    password;
+    userName;
+    passWord;
+    email;
 }
 export default User;
