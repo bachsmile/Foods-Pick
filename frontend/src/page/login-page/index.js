@@ -20,10 +20,15 @@ class LoginPage extends Component {
         container[0].classList.add('sign-up-mode');
     }
     onChangeUser = (event) => {
+
         let target = event.target;
         let name = target.name;
         var value = target.value;
         this.user[name] = value;
+        console.log(this.user);
+        axio
+
+
     }
     login = (event) => {
         event.preventDefault();
@@ -32,6 +37,12 @@ class LoginPage extends Component {
             this.props.history.push('/Home');
             document.cookie = `username=${this.user.username}`
         }
+    }
+    register=(event)=>{
+        event.preventDefault();
+        console.log(this.user);
+        axios.
+
     }
     render() {
         return (
@@ -42,11 +53,11 @@ class LoginPage extends Component {
                             <h2 className="title">Sign in</h2>
                             <div className="input-field">
                                 <i className="fas fa-user"></i>
-                                <input type="text" placeholder='Username' name='username' onChange={this.onChangeUser} />
+                                <input type="text" placeholder='Username' name='userName' onChange={this.onChangeUser} />
                             </div>
                             <div className="input-field">
                                 <i className="fas fa-lock"></i>
-                                <input type="password" placeholder='Password' name='password' onChange={this.onChangeUser} />
+                                <input type="password" placeholder='Password' name='passWord' onChange={this.onChangeUser} />
                             </div>
                             <input type="submit" value='login' className="btnlg solid" onClick={this.login} />
                             <div className="socical">
@@ -64,17 +75,17 @@ class LoginPage extends Component {
                             <h2 className="title">Sign up</h2>
                             <div className="input-field">
                                 <i className="fas fa-user"></i>
-                                <input type="text" placeholder='Username' />
+                                <input type="text" placeholder='Username' name='userName' onChange={this.onChangeUser}/>
                             </div>
                             <div className="input-field">
                                 <i className="fas fa-envelope"></i>
-                                <input type="text" placeholder='Email' />
+                                <input type="text" placeholder='Email' onChange={this.onChangeUser}/>
                             </div>
                             <div className="input-field">
                                 <i className="fas fa-lock"></i>
-                                <input type="password" placeholder='Password' />
+                                <input type="password" placeholder='Password' name='passWord' onChange={this.onChangeUser}/>
                             </div>
-                            <input type="submit" value='Sign up' className="btnlg solid" />
+                            <input type="submit" value='Sign up' className="btnlg solid" onClick={this.register}/>
                             <div className="socical">
                                 <p className="socical__text">Or sign up with socical platforms</p>
                                 <div className="socical__media">

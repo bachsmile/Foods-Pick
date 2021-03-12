@@ -1,0 +1,65 @@
+.panel-person{
+    // width: 40%;
+    height: 2000px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__panel{
+        width: 550px;
+        height: 700px;
+        position: relative;
+        background-color: chocolate;
+        span{
+            &:nth-child(1){
+                position: absolute;
+                top: 10%;
+                right: 5%;
+                transform: translate3d(0px,0px,0px);
+                object-fit: cover;
+                transition:  8s ease-in-out;
+                &.toDown{
+                    transform: translate3d(0px,20px,0px);
+                    transition:  8s 1s  ease-in-out;
+                }
+                &.toUp{
+                    transform: translate3d(0px,-20px,0px);
+                    transition:  8s 1s ease-in-out;
+                }
+            }
+            &:nth-child(2){
+                position: absolute;
+                bottom: 13%;
+                left: 10%;
+                transform: translate3d(0px,0px,0px);
+                object-fit: cover;
+                transition:  8s ease-in-out;
+                &.toDown{
+                    transform: translate3d(0px,25px,0px);
+                    transition:  8s 0.6s  ease-in-out;
+                }
+                &.toUp{
+                    transform: translate3d(0px,-25px,0px);
+                    transition:  8s 0.6s ease-in-out;
+                }
+            }
+            &:nth-child(3){
+                position: absolute;
+                bottom: 10%;
+                left: 0%;
+                transform: translate3d(0px,0px,0px);
+                object-fit: cover;
+                transition:  8s ease-in-out;
+                &.toDown{
+                    transform: translate3d(0px,60px,0px);
+                    transition:  8s  ease-in-out;
+                }
+                &.toUp{
+                    transform: translate3d(0px,-30px,0px);
+                    transition:  8s  ease-in-out;
+                }
+            }
+        }
+    }
+}

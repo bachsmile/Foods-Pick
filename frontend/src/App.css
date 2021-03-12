@@ -36,7 +36,13 @@ Link{
 p{
     font-size: 1.6rem;
 }
-
+.row{
+    min-width: 100%;
+    height: auto;
+}
+.containerFull{
+    width: 100%;
+}
 .containerS{
     width: 100%;
     max-width: 122.5rem;
