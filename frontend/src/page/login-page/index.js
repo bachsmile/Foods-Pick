@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 import imgApis from '../../container/imgApi/imgApi';
 import './style.scss';
-import { Link } from 'react-router-dom';
 import User from '../../container/class/userClass';
 import history from '../../router/history'
+import RegisterForm from './register-form';
+import UserAPi from '../../actions/service/api/userApi';
 class LoginPage extends Component {
-    user = new User;
     constructor(props) {
         super(props);
     }
@@ -20,25 +23,42 @@ class LoginPage extends Component {
         container[0].classList.add('sign-up-mode');
     }
     onChangeUser = (event) => {
-
         let target = event.target;
         let name = target.name;
         var value = target.value;
-        this.user[name] = value;
-        console.log(this.user);
-
+        User[name] = value;
     }
-    login = (event) => {
+    login = async(event) => {
         event.preventDefault();
-        if (this.user.username == 'admin' && this.user.password == 'admin') {
-            console.log(this.user);
-            this.props.history.push('/Home');
-            document.cookie = `username=${this.user.username}`
+        try {
+            const res= await UserAPi.postLogin(User);
+            if (res.message=='Success' ){
+                window.localStorage.setItem('token',res.data.token);
+                this.props.history.push('/Home');
+            }
+            console.log(res);
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    getApi= async (data) => {
+
+        try {
+            const res= await UserAPi.postLogin(data);
+            if (res.message=='Success' ){
+                console.log(res.data.token);
+                window.localStorage.setItem('token',res.data.token);
+                this.props.history.push('/Home');
+            }
+            console.log(res);
+        } catch (error) {
+            console.log(error)
         }
     }
     register=(event)=>{
         event.preventDefault();
-        console.log(this.user);
+        console.log(User);
+        
     }
     render() {
         return (
@@ -53,7 +73,7 @@ class LoginPage extends Component {
                             </div>
                             <div className="input-field">
                                 <i className="fas fa-lock"></i>
-                                <input type="password" placeholder='Password' name='passWord' onChange={this.onChangeUser} />
+                                <input type="password" placeholder='Password' name='userPassword' onChange={this.onChangeUser} />
                             </div>
                             <input type="submit" value='login' className="btnlg solid" onClick={this.login} />
                             <div className="socical">
@@ -67,32 +87,7 @@ class LoginPage extends Component {
                                 </div>
                             </div>
                         </form>
-                        <form action="" className='sign-up-form formlg'>
-                            <h2 className="title">Sign up</h2>
-                            <div className="input-field">
-                                <i className="fas fa-user"></i>
-                                <input type="text" placeholder='Username' name='userName' onChange={this.onChangeUser}/>
-                            </div>
-                            <div className="input-field">
-                                <i className="fas fa-envelope"></i>
-                                <input type="text" placeholder='Email' onChange={this.onChangeUser}/>
-                            </div>
-                            <div className="input-field">
-                                <i className="fas fa-lock"></i>
-                                <input type="password" placeholder='Password' name='passWord' onChange={this.onChangeUser}/>
-                            </div>
-                            <input type="submit" value='Sign up' className="btnlg solid" onClick={this.register}/>
-                            <div className="socical">
-                                <p className="socical__text">Or sign up with socical platforms</p>
-                                <div className="socical__media">
-                                    <a className="socical__icon"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="socical__icon"><i className="fab fa-google"></i></a>
-                                    <a className="socical__icon"><i className="fab fa-twitter"></i></a>
-                                    <a className="socical__icon"><i className="fab fa-linkedin-in"></i></a>
-                                    <Link to='/Home' className="socical__icon"><i className="fas fa-home"></i></Link>
-                                </div>
-                            </div>
-                        </form>
+                        <RegisterForm/>
                     </div>
                 </div>
                 <div className="panels">

@@ -21,7 +21,7 @@ class NotiResData {
             default:
                 break;
         }
-        res.status(statusRq).json({
+        return res.status(statusRq).json({
             message: this.notiStatus,
             data:dataRs,
         })

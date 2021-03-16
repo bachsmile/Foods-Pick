@@ -58,3 +58,7 @@ vào backend/src/resource/views/home.hbs để code giao diện trang home
 vào backend/src/resource/views/patials/header.hbs để code giao diện header
 
 driver lấy ảnh lấy design : https://drive.google.com/drive/folders/13uI3HN1RubuaXrnTnjG0tfChVLAta5KO?usp=sharing
+
+//tool 
+rsfp => react functions
+rcfc => react component
