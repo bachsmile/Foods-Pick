@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import imgApis from '../../../container/imgApi/imgApi';
 import User from '../../../container/class/userClass';
-import './style.scss'
+import './style.scss';
 RegisterForm.propTypes = {
     
 };
