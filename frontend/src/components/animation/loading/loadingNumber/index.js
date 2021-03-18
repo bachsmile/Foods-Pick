@@ -1,23 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import './style.scss'
-Loading.propTypes = {
+LoadingNumber.propTypes = {
     
 };
-function Loading(props) {
+function LoadingNumber(props) {
     const [numberLoad, setNumberLoad] = useState(0);
     const inputEl = useRef(null);   
     useEffect(() => {
     let count=0
     const interval = setInterval(() => {
-        count++;
-        setNumberLoad(count + 1 );
+        count =count+1 ;
+        setNumberLoad(count);
         if (count==145) {
             clearInterval();
             console.log('ok');
         }
-    }, 50);
-    return () => clearInterval(interval);
+        }, 60);
+        return () => clearInterval(interval);
     }, []);
     return (
         <div className={numberLoad <100? "panel-loader":  (numberLoad >140? "loader-hides":"loader-hide" )}>
@@ -32,4 +32,4 @@ function Loading(props) {
     );
 }
 
-export default Loading;
+export default LoadingNumber;

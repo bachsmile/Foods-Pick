@@ -6,6 +6,7 @@ import User from '../../../container/class/userClass';
 import UserAPi from '../../../actions/service/api/userApi';
 import { useHistory } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import LoadingNumber from '../../../components/animation/loading/loadingNumber';
 
 LoginForm.propTypes = {
     
